@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="">
+
+	<link href="css/default.css" rel="stylesheet" type="text/css" />
+	<link href="css/jquery-ui-1.9.2.custom.min.css" rel="stylesheet" type="text/css"/>
+
+	<script src="js/jquery-1.8.3.js" type="text/javascript"></script>
+	<script src="js/jquery-ui-1.9.2.custom.min.js" type="text/javascript"></script>
+	<script>
+		$(document).ready(function() {
+				$('#klik').click(function(e) {
+					var szukana = $('#szukana');
+					$( "#progressbar" ).css('display', 'block');
+					if (szukana.val().toLowerCase() == 'philips') {
+						$( "#progressbar" ).progressbar({
+							value: 1
+						});
+						setTimeout(function() {
+							 $( "#progressbar" ).progressbar({
+								value: 19
+							});
+						}, 2700);
+						setTimeout(function() {
+							 $( "#progressbar" ).progressbar({
+								value: 49
+							});
+						}, 5700);
+						setTimeout(function() {
+							 $( "#progressbar" ).progressbar({
+								value: 80
+							});
+						}, 8700);
+						setTimeout(function() {
+							 $( "#progressbar" ).progressbar({
+								value: 100
+							});
+						}, 11700);
+						setTimeout(function() {
+							 $( "#progressbar" ).css('display', 'none');
+							 $( "#telewizor2" ).css('display', 'block');
+						}, 11800);
+					}else if (szukana.val().toLowerCase() == 'samsung') {
+						$( "#progressbar" ).progressbar({
+							value: 1
+						});
+						setTimeout(function() {
+							 $( "#progressbar" ).progressbar({
+								value: 19
+							});
+						}, 2700);
+						setTimeout(function() {
+							 $( "#progressbar" ).progressbar({
+								value: 49
+							});
+						}, 5700);
+						setTimeout(function() {
+							 $( "#progressbar" ).progressbar({
+								value: 80
+							});
+						}, 8700);
+						setTimeout(function() {
+							 $( "#progressbar" ).progressbar({
+								value: 100
+							});
+						}, 11700);
+						setTimeout(function() {
+							 $( "#progressbar" ).css('display', 'none');
+							 $( "#telewizor1" ).css('display', 'block');
+						}, 11800);
+					}else if (szukana.val().toLowerCase() == 'lg') {
+						$( "#progressbar" ).progressbar({
+							value: 1
+						});
+						setTimeout(function() {
+							 $( "#progressbar" ).progressbar({
+								value: 19
+							});
+						}, 2700);
+						setTimeout(function() {
+							 $( "#progressbar" ).progressbar({
+								value: 49
+							});
+						}, 5700);
+						setTimeout(function() {
+							 $( "#progressbar" ).progressbar({
+								value: 80
+							});
+						}, 8700);
+						setTimeout(function() {
+							 $( "#progressbar" ).progressbar({
+								value: 100
+							});
+						}, 11700);
+						setTimeout(function() {
+							 $( "#progressbar" ).css('display', 'none');
+							 $( "#telewizor3" ).css('display', 'block');
+						}, 11800);
+					}else {
+						alert('Nie znaleziono takiego urządzenia');
+					}
+				});
+		});
+	</script>
+</head>
+<body>
+	<h2>Wyszukaj telewizor</h2>
+	<input type="text" id="szukana">
+	<button id="klik">Szukaj</button>
+	<div id="progressbar"></div>
+	<div id="telewizor3" style="display: none;">
+		<table style="margin-top:20px;">
+			<caption>Opisnia</caption>
+			<thead>
+				<tr>
+					<td></td>
+					<th scope="col">B. dobry</th>
+					<th scope="col">Dobry</th>
+					<th scope="col">Słaby</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">LG Smart 42LM660SK</th>
+					<td>26</td>
+					<td>11</td>
+					<td>0</td>
+				</tr>
+			</tbody>
+		</table>
+		<p><a href="http://www.ceneo.pl/15998500">LINK DO TELEWIZORA</a></p>
+	</div>
+	<div id="telewizor2" style="display: none;">
+		<table style="margin-top:20px;">
+			<caption>Opisnia</caption>
+			<thead>
+				<tr>
+					<td></td>
+					<th scope="col">B. dobry</th>
+					<th scope="col">Dobry</th>
+					<th scope="col">Słaby</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">Philips 46PFL9706K</th>
+					<td>14</td>
+					<td>1</td>
+					<td>3</td>
+				</tr>
+			</tbody>
+		</table>
+		<p><a href="http://www.ceneo.pl/13453612">LINK DO TELEWIZORA</a></p>
+	</div>
+	<div id="telewizor1" style="display: none;">
+		<table id="zuo123" style="margin-top:20px;">
+			<caption>Opisnia</caption>
+			<thead>
+				<tr>
+					<td></td>
+					<th scope="col">B. dobry</th>
+					<th scope="col">Dobry</th>
+					<th scope="col">Słaby</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">SAMSUNG UE40ES6800</th>
+					<td>19</td>
+					<td>4</td>
+					<td>0</td>
+				</tr>
+			</tbody>
+		</table>
+		<p><a href="http://www.ceneo.pl/15772226">LINK DO TELEWIZORA</a></p>
+	</div>
+</body>
+</html>
